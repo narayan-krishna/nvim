@@ -48,7 +48,8 @@ return packer.startup(function()
   use 'windwp/nvim-autopairs' -- autopairs
   use 'ahmedkhalf/project.nvim' -- mostly for project telescoping
 
-  use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
+  -- tabs/buffers
+  -- use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
 
   use {
     "folke/todo-comments.nvim",

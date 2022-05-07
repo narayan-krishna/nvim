@@ -135,11 +135,6 @@ _G.packer_plugins = {
     path = "/home/knara/.local/share/nvim/site/pack/packer/start/lightspeed.nvim",
     url = "https://github.com/ggandor/lightspeed.nvim"
   },
-  ["luatab.nvim"] = {
-    loaded = true,
-    path = "/home/knara/.local/share/nvim/site/pack/packer/start/luatab.nvim",
-    url = "https://github.com/alvarosevilla95/luatab.nvim"
-  },
   ["material.nvim"] = {
     loaded = true,
     path = "/home/knara/.local/share/nvim/site/pack/packer/start/material.nvim",
@@ -174,11 +169,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/knara/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/home/knara/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

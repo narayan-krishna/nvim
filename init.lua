@@ -10,7 +10,7 @@ require('telescope-config')
 require('Comment').setup{}
 require('nvim-autopairs').setup{}
 require('project_nvim').setup{}
-require('luatab').setup{}
+-- require('luatab').setup{}
 require('nvim-startup').setup()
 require('gitsigns').setup()
 
