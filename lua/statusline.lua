@@ -10,7 +10,7 @@ end
 
 
 require('lualine').setup {
-  options = { 
+  options = {
     theme = 'auto',
     component_separators = { left = '|', right = '|'},
     section_separators = { },

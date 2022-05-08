@@ -32,15 +32,19 @@ vim.opt.listchars:append("trail:⋅")
 vim.g.loaded_matchparen = false
 vim.wo.wrap = false
 
-vim.g.material_style = "darker"
+vim.g.material_style = "deep ocean"
 
-vim.g.gruvbox_material_background = 'hard'
+vim.g.gruvbox_material_background = 'medium'
 vim.g.gruvbox_material_better_performance = 1
 
 -- vim.g.rehash256 = 1
-vim.cmd([[colorscheme material]])
-vim.cmd([[ :hi StatusLine guibg=bg ]]) -- otherwise
+vim.cmd([[ colorscheme material ]])
+-- vim.cmd([[ :hi StatusLine guibg=bg ]]) -- otherwise
 vim.cmd([[ :hi EndOfBuffer guifg=bg ]])
 
 --BUG: won't work sadly
 -- vim.cmd([[ :hi TelescopeSelection guibg=bg gui=bold ]])
+--
+require('material').setup({
+  lualine_style = 'stealth'
+})

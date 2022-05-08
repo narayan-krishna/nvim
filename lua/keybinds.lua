@@ -49,6 +49,8 @@ nkeymap('<leader>kb', '<cmd>e ~/.config/nvim/lua/keybinds.lua<cr>') -- jump to c
 nkeymap('<leader>ca', '<cmd>e /mnt/c/users/knara/AppData/roaming/alacritty/alacritty.yml<cr>')
 nkeymap('<leader>cb', '<cmd>e ~/.bashrc<cr>') -- jump to config
 
+nkeymap('<leader>n', '<cmd>noh<cr>')
+
 -- nkeymap('<leader>wd', '<cmd>lcd %:p:h<cr>')
 
 -- nkeymap('<C-`>', '<C-S>6') -- jump to config

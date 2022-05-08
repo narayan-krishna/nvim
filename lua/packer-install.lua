@@ -19,12 +19,12 @@ return packer.startup(function()
   use 'nvim-treesitter/nvim-treesitter' -- nvim-treesitter
 
   -- HACK: lazy load lualine
-  -- use {
-  --   'nvim-lualine/lualine.nvim',
-  --   requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-  --   event = "BufWinEnter",
-  --   config="require('statusline')"
-  -- }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    event = "BufWinEnter",
+    config="require('statusline')"
+  }
   --
   -- TODO: eventually figure out galaxyline config/feline config
   -- lsp
@@ -49,7 +49,7 @@ return packer.startup(function()
   use 'ahmedkhalf/project.nvim' -- mostly for project telescoping
 
   -- tabs/buffers
-  -- use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
+  use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
 
   use {
     "folke/todo-comments.nvim",
