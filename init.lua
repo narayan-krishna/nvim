@@ -13,4 +13,3 @@ require('project_nvim').setup{}
 require('luatab').setup{}
 require('nvim-startup').setup()
 require('gitsigns').setup()
-

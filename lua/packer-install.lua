@@ -12,6 +12,7 @@ return packer.startup(function()
   use 'marko-cerovac/material.nvim'
   use 'sainnhe/gruvbox-material'
   use "rebelot/kanagawa.nvim"
+  use 'navarasu/onedark.nvim'
 
   -- BUG: molokai colorscheme specifically instantly clears message
   use 'henriquehbr/nvim-startup.lua'
