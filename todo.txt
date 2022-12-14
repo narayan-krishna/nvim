@@ -4,5 +4,11 @@ macros
 telescope/fzf/some way to navigate projects easier DONE
 check if i can get something to go to root of project DONE
 
-TODO: find a way to map <C-`> to c-s-6 (switch between files)
-TODO: look into vim-easymotion or an related lua-based plugin
+TODO: find a way to map <C-`> to c-s-6 (switch between files) DONE
+TODO: look into vim-easymotion or an related lua-based plugin DONE (vimsneak)
+
+tjdevries statusline DONE
+bufferline nvim DONE
+nvim tree with getcwd sync DONE
+fish git stuff
+set up a link between terminal and google drive

@@ -6,7 +6,7 @@ end
 return packer.startup(function()
   use 'wbthomason/packer.nvim'
 
-  -- themes (let's not go crazy here)
+  -- themes
   use 'ellisonleao/gruvbox.nvim'
   use 'Mofiqul/dracula.nvim'
   use 'marko-cerovac/material.nvim'
@@ -14,21 +14,8 @@ return packer.startup(function()
   use "rebelot/kanagawa.nvim"
   use 'navarasu/onedark.nvim'
 
-  -- BUG: molokai colorscheme specifically instantly clears message
-  use 'henriquehbr/nvim-startup.lua'
-
+  -- treesitter, lsp
   use 'nvim-treesitter/nvim-treesitter' -- nvim-treesitter
-
-  -- HACK: lazy load lualine
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-    event = "BufWinEnter",
-    config="require('statusline')"
-  }
-  --
-  -- TODO: eventually figure out galaxyline config/feline config
-  -- lsp
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
@@ -71,8 +58,20 @@ return packer.startup(function()
     end,
   })
 
-  use "lukas-reineke/indent-blankline.nvim"
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'tjdevries/express_line.nvim'
+  use 'lewis6991/gitsigns.nvim'
+  use 'nvim-tree/nvim-web-devicons'
 
-  use { 'lewis6991/gitsigns.nvim', }
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons', -- optional, for file icons
+		},
+		tag = 'nightly' -- optional, updated every week. (see issue #1193)
+	}
+
+  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
+
 
 end)

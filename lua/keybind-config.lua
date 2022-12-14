@@ -37,19 +37,24 @@ nkeymap('<leader>fc', '<cmd>Telescope colorscheme<cr>')
 nkeymap('<leader>fd', '<cmd>TodoTelescope<cr>')
 
 -- change these to use control
-nkeymap('<M-n>', '<cmd>tabnew<cr>')
-nkeymap('<M-j>', '<cmd>tabprev<cr>')
-nkeymap('<M-k>', '<cmd>tabnext<cr>')
+-- nkeymap('<M-n>', '<cmd>tabnew<cr>')
+nkeymap('<M-p>', '<cmd>BufferPrevious<cr>')
+nkeymap('<M-n>', '<cmd>BufferNext<cr>')
+nkeymap('<M-c>', '<cmd>BufferClose<cr>')
 nkeymap('tt', '<C-^>') -- just to switch back and forth between files
 
 -- file jumps (non-flexible file jumps)
 nkeymap('<leader>cd', '<cmd>e ~/todo.txt<cr>') -- jump to todos
 nkeymap('<leader>cn', '<cmd>e ~/.config/nvim/init.lua<cr>') -- jump to config
-nkeymap('<leader>kb', '<cmd>e ~/.config/nvim/lua/keybinds.lua<cr>') -- jump to config
+nkeymap('<leader>kb', '<cmd>e ~/.config/nvim/lua/keybind-config.lua<cr>') -- jump to config
 nkeymap('<leader>ca', '<cmd>e /mnt/c/users/knara/AppData/roaming/alacritty/alacritty.yml<cr>')
 nkeymap('<leader>cb', '<cmd>e ~/.bashrc<cr>') -- jump to config
 
 nkeymap('<leader>n', '<cmd>noh<cr>')
+
+nkeymap('<leader>tr', '<cmd>NvimTreeToggle<cr>')
+nkeymap('<leader>tc', '<cmd>NvimTreeClose<cr>')
+nkeymap('<leader>to', '<cmd>NvimTreeOpen<cr>')
 
 -- nkeymap('<leader>wd', '<cmd>lcd %:p:h<cr>')
 
