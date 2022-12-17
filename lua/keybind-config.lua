@@ -41,6 +41,7 @@ nkeymap('<leader>fd', '<cmd>TodoTelescope<cr>')
 nkeymap('<M-p>', '<cmd>BufferPrevious<cr>')
 nkeymap('<M-n>', '<cmd>BufferNext<cr>')
 nkeymap('<M-c>', '<cmd>BufferClose<cr>')
+nkeymap('<C-p>', '<cmd>BufferPick<cr>')
 nkeymap('tt', '<C-^>') -- just to switch back and forth between files
 
 -- file jumps (non-flexible file jumps)

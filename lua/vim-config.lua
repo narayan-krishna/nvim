@@ -34,7 +34,7 @@ vim.opt.listchars:append("trail:⋅")
 vim.g.loaded_matchparen = false
 vim.wo.wrap = false
 
-vim.g.material_style = "darker"
+vim.g.material_style = "deep ocean"
 vim.g.gruvbox_material_background = 'hard'
 vim.g.gruvbox_material_better_performance = 1
 

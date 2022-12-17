@@ -13,6 +13,10 @@ return packer.startup(function()
   use 'sainnhe/gruvbox-material'
   use "rebelot/kanagawa.nvim"
   use 'navarasu/onedark.nvim'
+  use 'nyoom-engineering/oxocarbon.nvim'
+
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
 
   -- treesitter, lsp
   use 'nvim-treesitter/nvim-treesitter' -- nvim-treesitter
